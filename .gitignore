@@ -1,38 +1,59 @@
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# Системные файлы
+.DS_Store
+Thumbs.db
 
-### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
+# Файлы и папки IntelliJ IDEA
+.idea/
 *.iws
 *.iml
 *.ipr
 
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# Исключаем конкретные файлы IntelliJ IDEA, которые могут быть нужны
+!/.idea/modules.xml
+!/.idea/jarRepositories.xml
+!/.idea/compiler.xml
+!/.idea/libraries/
 
-### NetBeans ###
+# Maven
+/target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Gradle
+/build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Eclipse
+.classpath
+.project
+.settings/
+.factorypath
+.springBeans
+.sts4-cache/
+
+# NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
+# VS Code
 .vscode/
 
-### Mac OS ###
-.DS_Store
+# Компилированные файлы
+*.class
+
+# Логи
+*.log
+
+# Временные файлы
+*.tmp
+*.swp
+*~
+
+# Кэш зависимостей
+.prefs/
+.cache/
+.cached/
